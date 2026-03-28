@@ -1,0 +1,10 @@
+export interface Tariff {
+  id: string;
+  period: string;
+  price: number;
+  full_price: number;
+  is_best: boolean;
+  text: string;
+}
+
+export interface TariffApiResponse extends Tariff {}

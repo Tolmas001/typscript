@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+:root {
+  --bg-main: #232829;
+  --bg-card: #313637;
+  --bg-dark: #2d3233;
+  --accent: #fdb056;
+  --accent-green: #81fe95;
+  --discount-red: #fd5656;
+  --text-white: #ffffff;
+  --text-gray: #cdcdcd;
+  --text-muted: #9a9a9a;
+  --border-color: #484d4e;
+}
+
+@theme inline {
+  --color-bg-main: var(--bg-main);
+  --color-bg-card: var(--bg-card);
+  --color-bg-dark: var(--bg-dark);
+  --color-accent: var(--accent);
+  --color-accent-green: var(--accent-green);
+  --color-discount-red: var(--discount-red);
+  --color-text-white: var(--text-white);
+  --color-text-gray: var(--text-gray);
+  --color-text-muted: var(--text-muted);
+  --color-border: var(--border-color);
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+body {
+  background: var(--bg-main);
+  color: var(--text-white);
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.animate-pulse-slow {
+  animation: blink 2s ease-in-out infinite;
+}
