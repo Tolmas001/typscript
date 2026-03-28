@@ -1,5 +1,7 @@
 import { NextResponse } from 'next/server';
 
+export const dynamic = 'force-dynamic';
+
 export async function GET() {
   try {
     const response = await fetch('https://t-core.fit-hub.pro/Test/GetTariffs', {
